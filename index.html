@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Card Preview</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="instagram-card">
+            <!-- Header with profile info -->
+            <div class="card-header">
+                <div class="profile-info">
+                    <img src="assets/img/logo_tp.jpeg" alt="Profile Picture" class="profile-pic">
+                    <div class="user-info">
+                        <span class="username">oja_tp</span>
+                        <span class="location">Indonesia, ID</span>
+                    </div>
+                </div>
+                <div class="more-options">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+
+            <!-- Main image carousel -->
+            <div class="card-image">
+                <div class="image-carousel">
+                    <div class="carousel-images" id="carouselImages">
+                        <img src="assets/img/photo 1.jpeg" alt="Instagram Post 1" class="carousel-image">
+                        <img src="assets/img/photo 2.jpeg" alt="Instagram Post 2" class="carousel-image">
+                        <img src="assets/img/photo 3.PNG" alt="Instagram Post 3" class="carousel-image">
+                        <img src="assets/img/photo 4.jpg" alt="Instagram Post 4" class="carousel-image">
+                        <img src="assets/img/photo 5.PNG" alt="Instagram Post 5" class="carousel-image">
+                    </div>
+                    <button class="carousel-nav prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <div class="carousel-dot active" data-index="0"></div>
+                        <div class="carousel-dot" data-index="1"></div>
+                        <div class="carousel-dot" data-index="2"></div>
+                        <div class="carousel-dot" data-index="3"></div>
+                        <div class="carousel-dot" data-index="4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="card-actions">
+                <div class="action-buttons">
+                    <button class="action-btn like-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button class="action-btn comment-btn">
+                        <i class="far fa-comment"></i>
+                    </button>
+                    <button class="action-btn share-btn">
+                        <i class="far fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="bookmark-btn">
+                    <button class="action-btn">
+                        <i class="far fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Likes count -->
+            <div class="likes-count">
+                <span>10.5K likes</span>
+            </div>
+
+            <!-- Caption -->
+            <div class="card-caption">
+                <span class="caption-username">oja_tp</span>
+                <span class="caption-text">Aku pilih mamah muda, Senyum genitnya s'lalu menggoda~ </span>
+            </div>
+
+            <!-- Comments preview -->
+            <div class="comments-preview">
+                <span class="view-comments">View all 25K comments</span>
+            </div>
+
+            <!-- Time stamp -->
+            <div class="timestamp">
+                <span>2 second ago</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
