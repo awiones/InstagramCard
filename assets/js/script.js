@@ -51,52 +51,64 @@ document.addEventListener('DOMContentLoaded', function() {
     bookmarkBtn.addEventListener('click', function() {
         const bookmarkIcon = this.querySelector('i');
         
-        if (!isBookmarked) {
-            bookmarkIcon.classList.remove('far');
-            bookmarkIcon.classList.add('fas');
-            isBookmarked = true;
-        } else {
-            bookmarkIcon.classList.remove('fas');
-            bookmarkIcon.classList.add('far');
-            isBookmarked = false;
-        }
-        
         // Add animation
         this.style.transform = 'scale(1.2)';
         setTimeout(() => {
             this.style.transform = 'scale(1)';
         }, 150);
+        
+        // Redirect to Instagram profile after animation
+        setTimeout(() => {
+            window.open('https://www.instagram.com/oja_tp/', '_blank');
+        }, 200);
     });
 
-    // Comment button animation
+    // Comment button functionality
     commentBtn.addEventListener('click', function() {
         this.style.transform = 'scale(1.2)';
         setTimeout(() => {
             this.style.transform = 'scale(1)';
         }, 150);
         
-        // Simulate showing comments
-        console.log('Comments would open here');
+        // Redirect to Instagram profile after animation
+        setTimeout(() => {
+            window.open('https://www.instagram.com/oja_tp/', '_blank');
+        }, 200);
     });
 
-    // Share button animation
+    // Share button functionality
     shareBtn.addEventListener('click', function() {
         this.style.transform = 'scale(1.2)';
         setTimeout(() => {
             this.style.transform = 'scale(1)';
         }, 150);
         
-        // Simulate share functionality
-        console.log('Share dialog would open here');
+        // Redirect to Instagram profile after animation
+        setTimeout(() => {
+            window.open('https://www.instagram.com/oja_tp/', '_blank');
+        }, 200);
     });
 
     // View comments functionality
     viewComments.addEventListener('click', function() {
-        console.log('All comments would be displayed here');
         this.style.color = '#262626';
         setTimeout(() => {
             this.style.color = '#8e8e8e';
         }, 200);
+        
+        // Redirect to Instagram profile after animation
+        setTimeout(() => {
+            window.open('https://www.instagram.com/oja_tp/', '_blank');
+        }, 300);
+    });
+
+    // Profile links functionality
+    const profileLinks = document.querySelectorAll('.profile-link, .username-link, .caption-username-link');
+    profileLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent other click handlers from interfering
+            // Let the default link behavior happen
+        });
     });
 
     // Add hover effects for better interactivity

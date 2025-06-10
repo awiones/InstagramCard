@@ -99,6 +99,21 @@ body::before {
   line-height: 1.2;
 }
 
+.profile-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.username-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.username-link:hover .username {
+  color: #8e8e8e;
+}
+
 .location {
   font-size: 12px;
   color: #8e8e8e;
@@ -275,7 +290,17 @@ body::before {
 
 .caption-username {
   font-weight: 600;
-  margin-right: 0px;
+  margin-right: 4px;
+}
+
+.caption-username-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.caption-username-link:hover .caption-username {
+  color: #8e8e8e;
 }
 
 .caption-text {
